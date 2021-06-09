@@ -14,5 +14,9 @@ variable "ec2_instance_type" {
 }
 
 variable "public_subnet_id" {
-  default     = "subnet-540e6632"
+  default = "subnet-540e6632"
+}
+
+variable "availability_zone" {
+  default = "us-east-1d"
 }
