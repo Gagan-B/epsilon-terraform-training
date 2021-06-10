@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "gagan-terraform-training"
-    key = "test1"
+    key    = "test1"
     region = "us-east-1"
   }
 }
@@ -13,7 +13,7 @@ provider "aws" {
 data "aws_ami" "amazon_linux" {
   most_recent = true
   filter {
-    name = "name"
+    name   = "name"
     values = ["amzn2-ami-hvm-2.0.20210427.0-x86_64-gp2"]
   }
   owners = ["137112412989"]
